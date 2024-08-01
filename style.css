@@ -1,0 +1,162 @@
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 30%;
+  height: 75vh;
+  margin-top: 50px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+form {
+  margin: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-text {
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
+  width: 70%;
+}
+
+.add-button.button {
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+.list-container {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.list-container {
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.list-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.list-container ul {
+  padding: 0;
+  margin: 0;
+}
+
+.task-container {
+  margin: 15px 0;
+  list-style-type: none;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+}
+
+.task-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button,
+.button:focus {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bcbcbc, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transform: translate(0, -3px);
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.button:active {
+  transform: translate(0, 0);
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #cecece, inset -5px -5px 10px #f2f2f2;
+}
+
+.logout-button,
+.logout-button:focus {
+  margin-top: 20px;
+  border: none;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bcbcbc, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transform: translate(0, -3px);
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.logout-button:active {
+  transform: translate(0, 0);
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #cecece, inset -5px -5px 10px #f2f2f2;
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+  .card {
+    width: 80%;
+    height: 80vh;
+  }
+
+  .list-container {
+    max-height: 380px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+}

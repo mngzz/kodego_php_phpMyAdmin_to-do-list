@@ -1,0 +1,72 @@
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 60vh;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 50px;
+}
+
+.username,
+.password {
+  border: none;
+  padding: 15px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
+}
+
+.button,
+.button:focus {
+  width: 100px;
+  margin-top: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bcbcbc, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transform: translate(0, -3px);
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.button:active {
+  transform: translate(0, 0);
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #cecece, inset -5px -5px 10px #f2f2f2;
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+  .card {
+    width: 65%;
+    height: 60vh;
+  }
+}
